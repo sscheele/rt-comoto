@@ -1,0 +1,9 @@
+<launch>
+	<include file="$(find git35_boxer_bringup)/launch/arms_and_hands.launch">
+		<arg name="use_hard_limits" value="true"/>
+	</include>
+	<!-- NOTE: don't bring up controller until CoMOTO is initialized!!! -->
+	<!-- <node pkg="julia_comoto" name="adaptive_ctrl" type="controller.py"></node> -->
+	<node pkg="julia_comoto" name="comoto" type="goto_comoto.sh" args="'$(find julia_comoto)/src/Comoto/script/'"></node>
+	<node pkg="julia_comoto" name="adaptive_ctrl" type="simple_controller.py"></node>
+</launch>

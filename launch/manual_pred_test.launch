@@ -1,0 +1,19 @@
+<launch>
+<node pkg="tf" type="static_transform_publisher" name="df_broadcaster" args="0 0 0 0 0 0 /world /tracker_depth_frame 100" />
+<node pkg="tf" type="static_transform_publisher" name="head_broadcaster" args="-0.098611 -1.158014 -0.561734 0 0 0 /tracker_depth_frame /tracker/user_1/head 100" />
+<node pkg="tf" type="static_transform_publisher" name="right_hip_broadcaster" args="-0.213356 -0.955247 0.055326 0 0 0 /tracker_depth_frame /tracker/user_1/right_hip 100" />
+<node pkg="tf" type="static_transform_publisher" name="neck_broadcaster" args="-0.100597 -0.883602 -0.291935 0 0 0 /tracker_depth_frame /tracker/user_1/neck 100" />
+<node pkg="tf" type="static_transform_publisher" name="left_shoulder_broadcaster" args="0.053240 -0.871897 -0.281265 0 0 0 /tracker_depth_frame /tracker/user_1/left_shoulder 100" />
+<node pkg="tf" type="static_transform_publisher" name="left_hand_broadcaster" args="0.148977 -0.693216 0.196887 0 0 0 /tracker_depth_frame /tracker/user_1/left_hand 100" />
+<node pkg="tf" type="static_transform_publisher" name="left_knee_broadcaster" args="-0.036652 -1.069644 0.556053 0 0 0 /tracker_depth_frame /tracker/user_1/left_knee 100" />
+<node pkg="tf" type="static_transform_publisher" name="right_elbow_broadcaster" args="-0.324603 -0.965896 -0.211047 0 0 0 /tracker_depth_frame /tracker/user_1/right_elbow 100" />
+<node pkg="tf" type="static_transform_publisher" name="right_shoulder_broadcaster" args="-0.254435 -0.895307 -0.302606 0 0 0 /tracker_depth_frame /tracker/user_1/right_shoulder 100" />
+<node pkg="tf" type="static_transform_publisher" name="right_hand_broadcaster" args="-0.330899 -0.835963 0.034355 0 0 0 /tracker_depth_frame /tracker/user_1/right_hand 100" />
+<node pkg="tf" type="static_transform_publisher" name="left_hip_broadcaster" args="-0.027079 -0.941074 0.068247 0 0 0 /tracker_depth_frame /tracker/user_1/left_hip 100" />
+<node pkg="tf" type="static_transform_publisher" name="left_foot_broadcaster" args="-0.078078 -1.291287 0.623425 0 0 0 /tracker_depth_frame /tracker/user_1/left_foot 100" />
+<node pkg="tf" type="static_transform_publisher" name="left_elbow_broadcaster" args="0.132237 -0.939012 -0.052757 0 0 0 /tracker_depth_frame /tracker/user_1/left_elbow 100" />
+<node pkg="tf" type="static_transform_publisher" name="torso_broadcaster" args="-0.110407 -0.915881 -0.115074 0 0 0 /tracker_depth_frame /tracker/user_1/torso 100" />
+<node pkg="tf" type="static_transform_publisher" name="right_knee_broadcaster" args="-0.274998 -1.042154 0.548504 0 0 0 /tracker_depth_frame /tracker/user_1/right_knee 100" />
+<node pkg="tf" type="static_transform_publisher" name="right_foot_broadcaster" args="-0.212813 -1.256628 0.761083 0 0 0 /tracker_depth_frame /tracker/user_1/right_foot 100" />
+<include file="$(find julia_comoto)/launch/predictor.launch"></include>
+</launch>

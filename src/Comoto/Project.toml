@@ -1,0 +1,20 @@
+name = "Comoto"
+uuid = "570b957a-82ef-4823-aeca-515b26f58f1d"
+authors = ["Sam <scheele@gatech.edu>"]
+version = "0.1.0"
+
+[deps]
+Altro = "5dcf52e5-e2fb-48e0-b826-96f46d2e3e73"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Dierckx = "39dd38d3-220a-591b-8e3c-4c3a8c710a94"
+FiniteDiff = "6a86dc24-6348-571c-b903-95158fe2bd41"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+RigidBodyDynamics = "366cf18f-59d5-5db9-a4de-86a9f6786172"
+RobotDynamics = "38ceca67-d8d3-44e8-9852-78a5596522e1"
+RobotOS = "22415677-39a4-5241-a37a-00beabbbdae8"
+Rotations = "6038ab10-8711-5258-84ad-4b1120ba62dc"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+TrajectoryOptimization = "c79d492b-0548-5874-b488-5a62c1d9d0ca"

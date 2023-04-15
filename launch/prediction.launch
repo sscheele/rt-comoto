@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find skeleton_tracker)/launch/tracker.launch"></include>
+	<node pkg="julia_comoto" name="remux" type="asus_remux.py"></node>
+	<node pkg="julia_comoto" name="predictor" type="linear_predictor.py"></node>
+</launch>

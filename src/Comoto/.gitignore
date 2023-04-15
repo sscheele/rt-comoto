@@ -1,0 +1,6 @@
+**/.ipynb_checkpoints
+.vscode
+src/traj.txt
+*.pyc
+src/human_trajs
+lit-review/Meetings

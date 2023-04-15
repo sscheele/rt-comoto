@@ -1,0 +1,4 @@
+**/.gitkeep
+**/__pycache__
+src/study/data/**
+src/study/tmp_frames/**
